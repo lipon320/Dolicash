@@ -1,31 +1,34 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dolicash - সহজ উপায়ে ইনকাম করুন</title>
+    <title>Dolicash - Earn Money Online Effortlessly</title>
+    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts: Hind Siliguri for Bengali -->
+    
+    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <style>
         body {
-            font-family: 'Hind Siliguri', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
-        /* Pulse glow animation for CTA button */
+        /* Animated CTA Glow Effect */
         @keyframes pulse-glow {
             0%, 100% {
-                box-shadow: 0 0 15px rgba(16, 185, 129, 0.6), 0 0 30px rgba(16, 185, 129, 0.3);
+                box-shadow: 0 0 18px rgba(16, 185, 129, 0.6), 0 0 35px rgba(16, 185, 129, 0.3);
                 transform: scale(1);
             }
             50% {
-                box-shadow: 0 0 25px rgba(16, 185, 129, 0.9), 0 0 50px rgba(16, 185, 129, 0.5);
+                box-shadow: 0 0 28px rgba(16, 185, 129, 0.9), 0 0 55px rgba(16, 185, 129, 0.5);
                 transform: scale(1.03);
             }
         }
@@ -34,170 +37,298 @@
             animation: pulse-glow 2.5s infinite ease-in-out;
         }
 
-        /* Background Gradient Blobs */
+        /* Custom Shimmer Effect for Bonus Button */
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        .bonus-shimmer-btn {
+            background: linear-gradient(90deg, #6366f1 0%, #a855f7 50%, #6366f1 100%);
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite linear;
+        }
+
+        /* Ambient Lighting Blobs */
         .bg-blob {
             position: absolute;
-            filter: blur(80px);
-            opacity: 0.25;
+            filter: blur(90px);
+            opacity: 0.22;
             z-index: 0;
             border-radius: 50%;
+            pointer-events: none;
         }
     </style>
+
+    <!-- Adsterra Social Bar Ad Code -->
+    <script src="https://pl31534812.profitableratecpmnetwork.com/95/18/6c/95186cff315ddff9b3bd3e431d9ee60a.js"></script>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between relative overflow-x-hidden">
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between relative overflow-x-hidden antialiased">
 
-    <div class="bg-blob w-72 h-72 sm:w-96 sm:h-96 bg-emerald-500 top-10 -left-20"></div>
-    <div class="bg-blob w-72 h-72 sm:w-96 sm:h-96 bg-indigo-600 top-1/3 -right-20"></div>
-    <div class="bg-blob w-72 h-72 sm:w-96 sm:h-96 bg-purple-600 bottom-10 left-10"></div>
+    <!-- Ambient Glowing Background Elements -->
+    <div class="bg-blob w-80 h-80 sm:w-[500px] sm:h-[500px] bg-emerald-500 top-[-50px] left-[-100px]"></div>
+    <div class="bg-blob w-80 h-80 sm:w-[450px] sm:h-[450px] bg-indigo-600 top-[35%] right-[-100px]"></div>
+    <div class="bg-blob w-80 h-80 sm:w-[500px] sm:h-[500px] bg-purple-600 bottom-10 left-10"></div>
 
-    <!-- Header Section -->
-    <header class="relative z-10 border-b border-slate-800/80 bg-slate-900/60 backdrop-blur-md sticky top-0">
+    <!-- Navigation Header -->
+    <header class="relative z-20 border-b border-slate-800/80 bg-slate-950/70 backdrop-blur-md sticky top-0">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-400 to-indigo-500 flex items-center justify-center font-bold text-slate-950 text-xl shadow-lg shadow-emerald-500/20">
-                    ৳
+            <!-- Brand Logo -->
+            <a href="https://www.akamaicdn.org/view.php?id=5547102&pub=3364078" target="_blank" class="flex items-center space-x-2.5">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-400 via-teal-400 to-indigo-500 flex items-center justify-center font-black text-slate-950 text-xl shadow-lg shadow-emerald-500/20">
+                    $
                 </div>
-                <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-teal-300 to-indigo-400">
+                <span class="text-2xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-teal-300 to-indigo-400">
                     Dolicash
                 </span>
-            </div>
-            <a href="https://www.akamaicdn.org/view.php?id=5547102&pub=3364078" target="_blank" class="text-sm font-semibold text-emerald-400 hover:text-emerald-300 border border-emerald-500/30 hover:border-emerald-500/80 px-4 py-2 rounded-full transition duration-300">
-                লগইন / রেজিস্টার
             </a>
+
+            <!-- Header Action Button -->
+            <div class="flex items-center gap-3">
+                <a href="https://www.profitableratecpmnetwork.com/rmzd9ec7d?key=8fb231e25030a5ea7876242ecc7534fa" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-amber-400 bg-amber-500/10 border border-amber-500/30 px-3 py-2 rounded-lg hover:bg-amber-500/20 transition">
+                    <i class="fa-solid fa-gift"></i> Bonus Offers
+                </a>
+                <a href="https://www.akamaicdn.org/view.php?id=5547102&pub=3364078" target="_blank" class="text-sm font-semibold text-slate-200 hover:text-white bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700/80 px-4 py-2 rounded-xl transition duration-300">
+                    Sign In / Register
+                </a>
+            </div>
         </div>
     </header>
 
-    <!-- Main Content Area -->
+    <!-- Adsterra 320x50 Banner Ad Placement (Top) -->
+    <div class="relative z-10 w-full flex flex-col items-center justify-center pt-4 pb-2 bg-slate-900/30 border-b border-slate-800/40">
+        <span class="text-[10px] text-slate-500 tracking-wider uppercase mb-1">Sponsored Advertisement</span>
+        <div class="min-h-[50px] min-w-[320px] flex items-center justify-center">
+            <script>
+              atOptions = {
+                'key' : 'c15b716148d184fd66a15d94a502edc7',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+              };
+            </script>
+            <script src="https://www.highrevenueformat.com/c15b716148d184fd66a15d94a502edc7/invoke.js"></script>
+        </div>
+    </div>
+
+    <!-- Main Content -->
     <main class="relative z-10 flex-grow">
         
         <!-- Hero Section -->
-        <section class="max-w-4xl mx-auto px-4 pt-12 pb-10 text-center">
+        <section class="max-w-4xl mx-auto px-4 pt-10 pb-8 text-center">
             
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs sm:text-sm font-medium mb-6">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs sm:text-sm font-medium mb-6">
                 <i class="fa-solid fa-bolt text-emerald-400 animate-bounce"></i>
-                <span>সহজ উপায়ে অনলাইনে টাকা ইনকাম করুন</span>
+                <span>Fast & Reliable Online Earnings Platform</span>
             </div>
 
-            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-white mb-6">
-                ডোলিক্যাশ <span class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-200">(Dolicash)</span> - এ সাইন আপ করুন এবং আয় করা শুরু করুন!
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-white mb-6">
+                Start Earning Money Online Today with <span class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-teal-300 to-indigo-400">Dolicash</span>
             </h1>
 
-            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-                আপনার হাতে থাকা স্মার্টফোন দিয়ে সহজেই পার্ট-টাইম ইনকাম করুন। কোন জটিল প্রক্রিয়া ছাড়াই দ্রুত কাজ সম্পন্ন করে উপার্জিত টাকা তুলে নিন।
+            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-8 leading-relaxed font-light">
+                Turn your free time into real cash. Complete simple tasks, complete surveys, and invite friends to earn rewards directly to your wallet.
             </p>
 
-            <!-- Main CTA Button -->
-            <div class="my-8 flex justify-center">
+            <!-- CTA Button Container -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 my-6">
+                <!-- Primary Referral Link Button -->
                 <a href="https://www.akamaicdn.org/view.php?id=5547102&pub=3364078" 
                    target="_blank"
-                   class="cta-pulse-btn w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-slate-950 text-xl font-bold rounded-2xl transition duration-300 transform hover:-translate-y-1">
-                    <i class="fa-solid fa-user-plus"></i>
-                    <span>এখনই অ্যাকাউন্ট তৈরি করুন</span>
+                   class="cta-pulse-btn w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-emerald-400 via-teal-400 to-emerald-500 text-slate-950 text-lg sm:text-xl font-extrabold rounded-2xl shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <i class="fa-solid fa-user-plus text-xl"></i>
+                    <span>Create Free Account Now</span>
                     <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <!-- Secondary Smartlink Bonus Offer Button -->
+                <a href="https://www.profitableratecpmnetwork.com/rmzd9ec7d?key=8fb231e25030a5ea7876242ecc7534fa" 
+                   target="_blank"
+                   class="bonus-shimmer-btn w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 text-white text-base font-bold rounded-2xl hover:opacity-90 transition duration-300 border border-indigo-400/30">
+                    <i class="fa-solid fa-fire text-amber-300"></i>
+                    <span>Claim $10 Welcome Bonus</span>
                 </a>
             </div>
 
-            <p class="text-xs text-slate-400 mt-2">
-                <i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> ১০০% ফ্রী রেজিস্ট্রেশন • কোন ফি লাগবে না
-            </p>
+            <div class="flex items-center justify-center gap-6 text-xs text-slate-400 mt-4">
+                <span class="flex items-center gap-1"><i class="fa-solid fa-shield-halved text-emerald-400"></i> 100% Free Registration</span>
+                <span class="flex items-center gap-1"><i class="fa-solid fa-bolt text-amber-400"></i> Instant Payouts</span>
+            </div>
         </section>
 
-        <!-- Highlights / Features -->
+        <!-- Key Features Section -->
         <section class="max-w-5xl mx-auto px-4 py-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 
-                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-emerald-500/50 transition duration-300 shadow-xl">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-4">
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800/80 hover:border-emerald-500/50 transition duration-300 shadow-xl relative group">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition duration-300">
                         <i class="fa-solid fa-mobile-screen-button"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-white mb-2">মোবাইল দিয়ে ইনকাম</h3>
+                    <h3 class="text-lg font-bold text-white mb-2">Flexible Mobile Tasks</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        মোবাইল দিয়ে যেকোনো স্থান থেকে কাজ করে প্রতিদিন টাকা উপার্জন করার দারুণ সুযোগ।
+                        Work anytime, anywhere directly from your smartphone or tablet with user-friendly offers.
                     </p>
                 </div>
 
-                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-indigo-500/50 transition duration-300 shadow-xl">
-                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-4">
-                        <i class="fa-solid fa-thumbs-up"></i>
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800/80 hover:border-indigo-500/50 transition duration-300 shadow-xl relative group">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-shield-check"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-white mb-2">সহজ ও বিশ্বাসযোগ্য</h3>
+                    <h3 class="text-lg font-bold text-white mb-2">Verified & Secure</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        ব্যবহার করা সহজ ও অত্যন্ত নিরাপদ একটি প্ল্যাটফর্ম, যেখানে আপনার সময় বিফলে যাবে না।
+                        Safe payouts and encrypted system ensuring your earnings and account privacy are always protected.
                     </p>
                 </div>
 
-                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition duration-300 shadow-xl">
-                    <div class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-2xl mb-4">
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800/80 hover:border-teal-500/50 transition duration-300 shadow-xl relative group">
+                    <div class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition duration-300">
                         <i class="fa-solid fa-wallet"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-white mb-2">বোনাস ও দ্রুত ক্যাশআউট</h3>
+                    <h3 class="text-lg font-bold text-white mb-2">Fast Cashout Methods</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        ইনস্ট্যান্ট রেফারেল বোনাস উপভোগ করুন এবং সহজ উপায়ে ক্যাশআউট সুবিধা পান।
+                        Withdraw your profits through multiple popular payment options quickly with low minimum threshold.
                     </p>
                 </div>
 
             </div>
         </section>
 
-        <!-- Steps Section -->
-        <section class="max-w-4xl mx-auto px-4 py-12">
+        <!-- Native Banner Ad Container Section -->
+        <section class="max-w-4xl mx-auto px-4 py-6">
+            <div class="p-4 sm:p-6 rounded-2xl bg-slate-900/50 border border-slate-800/80 text-center relative overflow-hidden">
+                <span class="text-[10px] text-slate-500 tracking-wider uppercase block mb-3">Recommended Sponsored Offers</span>
+                
+                <!-- Adsterra Native Banner Ad Code -->
+                <div class="min-h-[100px] flex justify-center items-center">
+                    <script async="async" data-cfasync="false" src="https://pl31534811.profitableratecpmnetwork.com/ee2cdecf3c964b907fd537f1f4bb4642/invoke.js"></script>
+                    <div id="container-ee2cdecf3c964b907fd537f1f4bb4642"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="max-w-4xl mx-auto px-4 py-10">
             <div class="text-center mb-10">
-                <h2 class="text-2xl sm:text-3xl font-bold text-white">ইনকাম শুরু করার সহজ ৩টি ধাপ</h2>
-                <p class="text-slate-400 text-sm mt-2">নিচের নিয়মগুলো অনুসরন করে কাজ শুরু করুন</p>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">How To Get Started in 3 Steps</h2>
+                <p class="text-slate-400 text-sm mt-2">Follow these simple steps to start earning in minutes</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 
                 <!-- Step 1 -->
-                <div class="flex flex-col items-center text-center p-6 bg-slate-900/40 border border-slate-800 rounded-2xl relative">
-                    <div class="w-12 h-12 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-slate-950 font-black text-xl flex items-center justify-center mb-4 shadow-lg">
-                        ১
+                <div class="flex flex-col items-center text-center p-6 bg-slate-900/40 border border-slate-800/80 rounded-2xl relative">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-r from-emerald-400 to-teal-400 text-slate-950 font-black text-xl flex items-center justify-center mb-4 shadow-lg shadow-emerald-500/20">
+                        1
                     </div>
-                    <h4 class="font-bold text-lg text-white mb-2">লিংক-এ ক্লিক করুন</h4>
-                    <p class="text-slate-400 text-sm">উপরে বা নিচে দেওয়া লিংকে ক্লিক করে সরাসরি অফিশিয়াল পেজে যান।</p>
+                    <h4 class="font-bold text-lg text-white mb-2">Register Your Account</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Click the sign-up button and fill out the quick registration form for free.</p>
                 </div>
 
                 <!-- Step 2 -->
-                <div class="flex flex-col items-center text-center p-6 bg-slate-900/40 border border-slate-800 rounded-2xl relative">
-                    <div class="w-12 h-12 rounded-full bg-gradient-to-r from-teal-500 to-indigo-500 text-slate-950 font-black text-xl flex items-center justify-center mb-4 shadow-lg">
-                        ২
+                <div class="flex flex-col items-center text-center p-6 bg-slate-900/40 border border-slate-800/80 rounded-2xl relative">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-r from-teal-400 to-indigo-400 text-slate-950 font-black text-xl flex items-center justify-center mb-4 shadow-lg shadow-teal-500/20">
+                        2
                     </div>
-                    <h4 class="font-bold text-lg text-white mb-2">বিনামূল্যে রেজিস্ট্রেশন</h4>
-                    <p class="text-slate-400 text-sm">আপনার প্রয়োজনীয় তথ্য দিয়ে সম্পূর্ণ ফ্রিতে একটি অ্যাকাউন্ট খুলুন।</p>
+                    <h4 class="font-bold text-lg text-white mb-2">Complete Simple Tasks</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Choose from available micro-tasks, surveys, and app testing offers.</p>
                 </div>
 
                 <!-- Step 3 -->
-                <div class="flex flex-col items-center text-center p-6 bg-slate-900/40 border border-slate-800 rounded-2xl relative">
-                    <div class="w-12 h-12 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-slate-950 font-black text-xl flex items-center justify-center mb-4 shadow-lg">
-                        ৩
+                <div class="flex flex-col items-center text-center p-6 bg-slate-900/40 border border-slate-800/80 rounded-2xl relative">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-r from-indigo-400 to-purple-400 text-slate-950 font-black text-xl flex items-center justify-center mb-4 shadow-lg shadow-indigo-500/20">
+                        3
                     </div>
-                    <h4 class="font-bold text-lg text-white mb-2">কাজ শুরু করুন</h4>
-                    <p class="text-slate-400 text-sm">সহজ টাস্ক পূরণ করুন এবং দ্রুত টাকা উপার্জন শুরু করুন!</p>
+                    <h4 class="font-bold text-lg text-white mb-2">Withdraw Earnings</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Collect your cash earnings and request quick withdrawals to your account.</p>
                 </div>
 
             </div>
 
-            <!-- Bottom CTA Trigger -->
-            <div class="mt-12 p-8 rounded-3xl bg-gradient-to-r from-slate-900 via-emerald-950/30 to-slate-900 border border-emerald-500/30 text-center">
-                <h3 class="text-2xl font-bold text-white mb-3">আর দেরি কেন? এখনই যুক্ত হোন!</h3>
-                <p class="text-slate-300 text-sm mb-6 max-w-md mx-auto">অ্যাকাউন্ট খুলতে মাত্র ১ মিনিট সময় লাগবে। সম্পূর্ণ বিনামূল্যে শুরু করুন।</p>
-                <a href="https://www.akamaicdn.org/view.php?id=5547102&pub=3364078" 
-                   target="_blank"
-                   class="inline-flex items-center gap-2 px-8 py-3.5 bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-bold rounded-xl transition duration-300 shadow-lg shadow-emerald-500/20">
-                    <span>সাইন আপ করুন</span>
-                    <i class="fa-solid fa-arrow-right text-xs"></i>
+            <!-- Smartlink Sponsored High-Paying Offers Box -->
+            <div class="mt-8 p-4 rounded-2xl bg-indigo-950/40 border border-indigo-500/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-star text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Looking for Premium Paid Offers?</h4>
+                        <p class="text-xs text-slate-400">Unlock high-reward sponsor tasks with extra bonus payouts.</p>
+                    </div>
+                </div>
+                <!-- Smartlink CTA -->
+                <a href="https://www.profitableratecpmnetwork.com/rmzd9ec7d?key=8fb231e25030a5ea7876242ecc7534fa" 
+                   target="_blank" 
+                   class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs rounded-xl transition duration-300 shrink-0">
+                    Explore Sponsored Offers <i class="fa-solid fa-arrow-right ml-1"></i>
                 </a>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="max-w-3xl mx-auto px-4 py-8">
+            <h2 class="text-2xl font-bold text-white text-center mb-8">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                
+                <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <h3 class="font-semibold text-white mb-2"><i class="fa-solid fa-circle-question text-emerald-400 mr-2"></i> Is Dolicash completely free to join?</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Yes! Registration is 100% free. You will never be asked to pay any membership fees to start earning.</p>
+                </div>
+
+                <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <h3 class="font-semibold text-white mb-2"><i class="fa-solid fa-circle-question text-emerald-400 mr-2"></i> How soon can I withdraw my money?</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Once you reach the low minimum payout threshold, you can request a cashout instantly.</p>
+                </div>
+
+                <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <h3 class="font-semibold text-white mb-2"><i class="fa-solid fa-circle-question text-emerald-400 mr-2"></i> Can I work on my smartphone?</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Absolutely! The platform is fully optimized for mobile browsers, Android, and iOS devices.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Final Call-to-Action Section -->
+        <section class="max-w-4xl mx-auto px-4 py-12">
+            <div class="p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-slate-900 via-emerald-950/40 to-slate-900 border border-emerald-500/30 text-center relative overflow-hidden shadow-2xl">
+                <h3 class="text-2xl sm:text-4xl font-extrabold text-white mb-4">Ready to Start Earning Cash?</h3>
+                <p class="text-slate-300 text-sm sm:text-base mb-8 max-w-lg mx-auto">
+                    Join thousands of satisfied users making extra money in their spare time. Sign up takes less than 60 seconds!
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <!-- Referral Link Primary Action -->
+                    <a href="https://www.akamaicdn.org/view.php?id=5547102&pub=3364078" 
+                       target="_blank"
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-bold rounded-xl transition duration-300 shadow-lg shadow-emerald-500/20">
+                        <span>Sign Up for Dolicash</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    
+                    <!-- Smartlink Secondary Action -->
+                    <a href="https://www.profitableratecpmnetwork.com/rmzd9ec7d?key=8fb231e25030a5ea7876242ecc7534fa" 
+                       target="_blank"
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold rounded-xl transition duration-300">
+                        <i class="fa-solid fa-gift text-amber-400"></i>
+                        <span>Claim Bonus Offer</span>
+                    </a>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <!-- Footer -->
-    <footer class="relative z-10 border-t border-slate-800/80 bg-slate-950 py-6 text-center text-xs text-slate-500">
-        <div class="max-w-6xl mx-auto px-4 space-y-3">
-            <p>&copy; 2026 Dolicash. সর্বস্বত্ব সংরক্ষিত।</p>
+    <!-- Footer Section -->
+    <footer class="relative z-10 border-t border-slate-800/80 bg-slate-950 py-8 text-center text-xs text-slate-500">
+        <div class="max-w-6xl mx-auto px-4 space-y-4">
+            <div class="flex justify-center items-center space-x-2">
+                <div class="w-6 h-6 rounded-md bg-gradient-to-tr from-emerald-400 to-indigo-500 flex items-center justify-center font-bold text-slate-950 text-xs">
+                    $
+                </div>
+                <span class="font-bold text-slate-300">Dolicash</span>
+            </div>
+            <p>&copy; 2026 Dolicash. All rights reserved.</p>
             <p class="max-w-2xl mx-auto leading-relaxed text-slate-600">
-                ডিক্লেমার: এই প্ল্যাটফর্মে কাজ করার ক্ষেত্রে নিজ দায়িত্বে নিয়মাবলী মেনে কাজ করুন। ফলাফল আপনার কাজের ধরণের উপর নির্ভর করবে।
+                Disclaimer: Earnings depend on individual activity and task completion rate. Please follow the platform rules and guidelines for optimal results.
             </p>
         </div>
     </footer>
